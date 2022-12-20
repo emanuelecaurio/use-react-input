@@ -1,0 +1,41 @@
+{
+  "name": "use-react-input",
+  "version": "1.0.0",
+  "description": "Simple hooks that handles input onChange function for you.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "input",
+    "react-input",
+    "use-react-input",
+    "react-input-hooks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emanuelecaurio/use-react-input.git"
+  },
+  "author": "Emanuele Caurio",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf dist rimraf demo/src/lib",
+    "prebuild": "npm run clean",
+    "build": "tsc && copyfiles -u 1 \"src/**/*.css\" dist/",
+    "postbuild": "copyfiles -u 1 \"dist/**/*\" demo/src/lib",
+    "preversion": "npm run build",
+    "postversion": "git push --follow-tags"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3"
+  }
+}
