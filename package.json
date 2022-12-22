@@ -1,6 +1,6 @@
 {
   "name": "use-react-input",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple hooks that handles input onChange function for you.",
   "main": "dist/index.js",
   "files": [
