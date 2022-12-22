@@ -1,4 +1,5 @@
 # use-react-input
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/use-react-input"> <img alt="Snyk Vulnerabilities for npm package" src="https://img.shields.io/snyk/vulnerabilities/npm/use-react-input">
 
 Simple hooks that handles input onChange function for you.
 
