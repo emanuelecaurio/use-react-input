@@ -5,7 +5,7 @@ import {
 } from "./lib";
 
 // if input props will not change, you can declare them outside the render cycle for better performance.
-const surnameProps = {style: {background: "azure"}, placeholder: "insert some text here..",}
+const surnameProps = {style: {background: "azure"}, placeholder: "insert some text here..", onChange: (e) => console.log(e)}
 
 function App() {
   const [name, inputName] = useInput(
