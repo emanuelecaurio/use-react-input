@@ -217,6 +217,27 @@ function App() {
     );
 }
 ```
+### additional onChange (available from v1.1.0)
+You may want to add additional onChange functions when you write into input.
+<br/>
+You can do that by adding your onChange from object. Note that you will get the value as always.
+<br/>
+Example:
+```js
+const [surname, inputSurname] = useInput({
+    defaultValue: test,
+   onChange: (e) => console.log("print the event: ", e)
+})
+```
+same for `useInputCheckbox`
+```js
+const [checkbox, inputCheckbox] = useInputCheckbox({
+    defaultChecked: true,
+   onChange: (e) => {
+        console.log("additional function. Print event: ", e)
+   }
+})
+```
 
 ## 💻 Demo
 
