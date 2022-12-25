@@ -5,11 +5,6 @@ Simple hooks that handles input onChange function for you.
 
 ## Motivation
 
-When you build Apps that require complex forms with many input form, you may use libraries
-like [react-jsonschema-form](https://www.npmjs.com/package/react-jsonschema-form) or something similar.
-<br/>
-Don't get me wrong, there's nothing bad about that.
-<br/>
 The purpose of `use-react-input` is to provide simple hooks that relieve you
 of having to manage onChange functions.
 
